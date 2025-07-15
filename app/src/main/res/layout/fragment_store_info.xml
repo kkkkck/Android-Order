@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_store_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地址: [店铺地址]"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_store_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话: [联系电话]"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_store_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="营业时间: [营业时间]"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

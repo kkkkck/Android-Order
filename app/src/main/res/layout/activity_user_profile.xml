@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".activity.UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_default_avatar"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:padding="2dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="User Avatar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="昵称"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="默认收货地址"
+            android:inputType="textPostalAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存个人信息"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的订单"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@android:color/holo_red_dark"/>
+
+</LinearLayout>

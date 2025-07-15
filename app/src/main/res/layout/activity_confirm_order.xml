@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConfirmOrderActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:contentDescription="@string/cart_items_list_description" /> <LinearLayout
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        tools:text="总计: ¥ 99.99" /> <Button
+    android:id="@+id/btn_confirm_payment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/confirm_payment"/> </LinearLayout>
+</RelativeLayout>
